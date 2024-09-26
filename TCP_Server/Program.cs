@@ -7,7 +7,7 @@ using System.Threading;
 
 class Server
 {
-    private static readonly List<TcpClient> clients = new List<TcpClient>();
+    private static readonly List<TcpClient> clients = new List<TcpClient>();//fiosdfhgioth
     private const int Port = 8888;
 
     static void Main()
