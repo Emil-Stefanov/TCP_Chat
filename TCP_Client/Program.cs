@@ -28,15 +28,16 @@ class Client
 
     static void ReceiveMessages(object obj)
     {
-        NetworkStream stream = (NetworkStream)obj;
-        byte[] buffer = new byte[1024];
+        NetworkStream stream = (NetworkStream)obj; // създава обект stream от клас NetwotkStream като го каства към същия тип
+        byte[] buffer = new byte[1024]; // инициализира се буферен масив от байтове с дължина 1024 
         int bytesRead; // инициализира целочислена променлива отностно прочетените байтове
 
+        // прави проверки за наличието на изключения (exceptions)
         while (true)
         {
             try
             {
-                bytesRead = stream.Read(buffer, 0, buffer.Length);
+                bytesRead = stream.Read(buffer, 0, buffer.Length); //променливата за прочетените байтове получава стойност; взема се от буферния масив от 0 до дължината му
                 if (bytesRead == 0)
                 {
                     break;
