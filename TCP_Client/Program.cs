@@ -37,7 +37,7 @@ class Client
     // дефиниране на метод за получаване на съобщения от сървъра
     static void ReceiveMessages(object obj)
     {
-        // преобразуване/кастване  на обекта към ъм същия тип NetwotkStream
+        // преобразуване/кастване  на обекта към тип NetwotkStream
         NetworkStream stream = (NetworkStream)obj;
         // създаване на буферен масив от байтове с дължина 1024
         byte[] buffer = new byte[1024];
