@@ -16,7 +16,7 @@ class Client
         TcpClient client = new TcpClient(ServerIp, Port);
         Console.WriteLine("Connected to server. Start chatting!");
 
-        // задаване на обекта stream 
+        // задаване на обекта stream за четене и/или запис на данни към и от сървъра
         NetworkStream stream = client.GetStream();
 
         // създаване на нова нишка за получавнане на съобщения от сървъра 
