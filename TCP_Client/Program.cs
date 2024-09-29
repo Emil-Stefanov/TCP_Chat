@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading;
+using System.Net.Sockets; // за мрежовите услуги
+using System.Text; // за кодирането и конвертирането
+using System.Threading; // за управление на нишките
 
 class Client
 {
